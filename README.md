@@ -1,3 +1,17 @@
+
+We want to create the front page of a web site. The web-site will carry about the traffic information and also the nearby Fire service, Glossary, Health Center, Police Station, Emergency services, Important place. Any enhancement in the forntend page is highly appreciated. 
+
+Use Demo address in address and other fields. 
+
+Create - 
+- Navigation
+- Login  pages
+- Front page design
+- A dashboard 
+- A map enabled service
+-tourest assistant
+-user/tourest guide
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
