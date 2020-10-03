@@ -9,6 +9,8 @@ Create -
 - Front page design
 - A dashboard 
 - A map enabled service
+-tourest assistant
+-user/tourest guide
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
