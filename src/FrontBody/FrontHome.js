@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../css/FrontHome.css";
-import { Button, Container, Grid } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 // import Particles from 'react-particles-js';
 
@@ -42,9 +42,9 @@ export class FrontHome extends Component {
                     </div>
                     {/* The Stats */}
                     <div className="FrontHome__stat">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-sm">
                                     <div className="FrontHome__statBox">
                                         99% <br></br>
                                     coverage of the world
@@ -53,7 +53,7 @@ export class FrontHome extends Component {
                                         Build with reliable, comprehensive data<br></br> for over 200 countries and territories.
                                 </div>
                                 </div>
-                                <div class="col-sm">
+                                <div className="col-sm">
                                     <div className="FrontHome__statBox">
                                         25 million <br></br>
                                 updates daily
@@ -62,7 +62,7 @@ export class FrontHome extends Component {
                                         Count on accurate, real-time location information.
                                 </div>
                                 </div>
-                                <div class="col-sm">
+                                <div className="col-sm">
                                     <div className="FrontHome__statBox">
                                         1 billion <br></br>
                                 monthly active users
@@ -98,8 +98,8 @@ export class FrontHome extends Component {
                     <div className="FrontHome__seeLatest">
                         <div className="container">
                             <div className="row">
-                                
-                            <div className="col-sm">
+
+                                <div className="col-sm">
                                     <div className="FrontHome__seeLatestCard">
                                         <div className="FrontHome__seeLatestCardImg">
                                             <img
@@ -111,7 +111,7 @@ export class FrontHome extends Component {
                                             Maps Customization
                                         </div>
                                         <div className="FrontHome__seeLatestCardBody">
-                                        Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
+                                            Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ export class FrontHome extends Component {
                                             Maps Customization
                                         </div>
                                         <div className="FrontHome__seeLatestCardBody">
-                                        Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
+                                            Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@ export class FrontHome extends Component {
                                             Maps Customization
                                         </div>
                                         <div className="FrontHome__seeLatestCardBody">
-                                        Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
+                                            Help your business stand out with a suite of new customization and styling features. Plus, map customization and management is now available via the Cloud Console, enabling real-time updates across multiple platforms and devices - without changing a line of code.
                                         </div>
                                     </div>
                                 </div>
