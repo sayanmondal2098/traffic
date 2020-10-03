@@ -63,3 +63,90 @@
 .FrontHome__statBox{
     
 }
+
+.FrontHome__horizons{
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center !important; */
+    /* background-image: url('../img/pattern1.png'); */
+    width: 100%;
+    height: 300px;
+    /* text-align: center ; */
+    background-color: #f0f0f0;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 calc(50% - 50vw); */
+    padding: 50px 0;
+}
+
+.FrontHome__horizonsHeading{
+    text-align: center;
+    color: #626262;
+    font-family: "Google Sans", "Arial", "sans-serif";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    padding: 3%;
+}
+
+.FrontHome__horizonsWrite{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #626262;
+}
+
+.FrontHome__whatsNewButton {
+    text-align: center;
+    align-items: center;   
+}
+
+.FrontHome__seeLatest{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.FrontHome__seeLatestCard{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.FrontHome__seeLatestCardImg{
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+.FrontHome__seeLatestCardImgProp{
+    padding-left: 2px;
+    border: 0;
+    height: 150px;
+    width: 300px;
+}
+
+.FrontHome__seeLatestCardHeading{
+    font-family: "Google Sans", "Arial", "sans-serif";
+    font-size: 22px;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+    color: #626262;
+    font-weight: 600;
+    padding-top: 2%;
+}
+
+.FrontHome__seeLatestCardBody{
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #626262;
+    padding-right: 10px;
+    /* padding: 5%; */
+}
+
