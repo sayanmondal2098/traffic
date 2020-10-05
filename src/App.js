@@ -24,6 +24,15 @@ function App() {
         </Switch>
       </div>
     </Router>
+import './App.css';
+// import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Routing from "./Routing/Routing";
+
+function App() {
+  return (
+    <div className="App">
+      <Routing />
+    </div>
   );
 }
 
