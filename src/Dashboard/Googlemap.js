@@ -8,6 +8,8 @@ import {
     Polyline
   } from "react-google-maps";
 
+  import { GOOGLE_MAP_API_KEY } from "../Keys";
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default class Googlemap extends Component {
@@ -26,7 +28,7 @@ export default class Googlemap extends Component {
                     <Polyline path={[{ lat: -34.397, lng: 150.644 }, { lat: -35.397, lng: 151.644 }]} />
                 </GoogleMap>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "" }}
+                    bootstrapURLKeys={{ key: GOOGLE_MAP_API_KEY }}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                 >
