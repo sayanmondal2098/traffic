@@ -2,19 +2,7 @@ import React, { Component } from 'react'
 import "../css/Signin.css"
 import { Link } from "react-router-dom"
 import HomeIcon from '@material-ui/icons/Home';
-import { Link } from 'react-router-dom'
 
-// Material UI Components
-import {
-    Button,
-    Checkbox,
-    FormControlLabel,
-    Grid,
-    Paper,
-    SvgIcon,
-    TextField,
-    Typography,
-} from '@material-ui/core'
 
 export default class Signin extends Component {
     render() {
