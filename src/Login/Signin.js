@@ -12,7 +12,7 @@ export default class Signin extends Component {
                     <div className="row">
                         <div className="col-md-3"></div>
                         <div className="col-md-6 d-flex justify-content-center flex-column align-items-center col-md-6__signin">
-                            <img id="img" src="https://linkpicture.com/q/31e9Y7Ob5wL_1.png" />
+                            <img id="img" src="https://linkpicture.com/q/31e9Y7Ob5wL_1.png" alt="background"/>
                             <h2 className="text-center" id="h2__signin">Sign In</h2>
                             <form>
                                 <input autoComplete="off" type="email" className="form-control form__signin" name="Email" placeholder="E-mail Id / Phone No." maxLength="50" />

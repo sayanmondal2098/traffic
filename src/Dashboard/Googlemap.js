@@ -26,7 +26,7 @@ export default class Googlemap extends Component {
                     <Polyline path={[{ lat: -34.397, lng: 150.644 }, { lat: -35.397, lng: 151.644 }]} />
                 </GoogleMap>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyAWxH3lSodPscePDwGyBTFnRcBQUkLZaDU" }}
+                    bootstrapURLKeys={{ key: "" }}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                 >

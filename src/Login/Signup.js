@@ -25,7 +25,7 @@ function Signup() {
                 <div className="col-1"></div>
                 <div className="d-flex justify-content-center align-items-center col-md-5 form_signup">
                     <div className="signup-form d-flex justify-content-center align-items-center flex-column">
-                        <img id="img" src="https://linkpicture.com/q/31e9Y7Ob5wL_1.png" />
+                        <img id="img" src="https://linkpicture.com/q/31e9Y7Ob5wL_1.png" alt="background" />
 
                         <h1 className="text-center" id="h1__signup">Sign Up</h1>
                         <form action="/examples/actions/confirmation.php" method="post" className="form_signup_layout d-flex justify-content-center align-items-center flex-column">
