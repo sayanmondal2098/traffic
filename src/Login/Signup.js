@@ -1,16 +1,24 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import "../css/Signup.css"
 import { Link } from "react-router-dom"
 import HomeIcon from '@material-ui/icons/Home';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 function Signup() {
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            document.getElementById("lat").value = position.coords.latitude
+            console.log("Latitude is :", position.coords.latitude);
+            document.getElementById("long").value = position.coords.longitude
+            console.log("Longitude is :", position.coords.longitude);
+        });
+    })
     return (
         <div className="body__signup d-flex justify-content-center align-items-center">
             <div className="container d-flex flex-column col-12 flex-md-row container__signup">
                 <div className="col-md-1"></div>
                 <div className="d-flex justify-content-center flex-column col-md-4 Card__signup__container">
-                    <div className="card  mb-3 Card__signup d-flex justify-content-center flex-column align-items-center">
+                    <div className="card mb-3 Card__signup d-flex justify-content-center flex-column align-items-center">
                         <div className="card-header bg-transparent border-success" id="welcome">WELCOME</div>
                         <div className="card-body text-success card__body d-flex justify-content-center flex-column">
                             <p className="card-text card__text">
@@ -50,8 +58,8 @@ function Signup() {
                                 </div>
                             </div>
                             <div className="row flex-md-row flex-column">
-                                <div className="col"><input type="text" className="form-control form__signup" name="latitude" placeholder="Latitude" required="required" autoComplete="off"></input></div>
-                                <div className="col"><input type="text" className="form-control form__signup" name="longitude" placeholder="Longitude" required="required" autoComplete="off"></input></div>
+                                <div className="col"><input type="text" className="form-control form__signup" name="latitude" placeholder="Latitude" required="required" autoComplete="off" id="lat"></input></div>
+                                <div className="col"><input type="text" className="form-control form__signup" name="longitude" placeholder="Longitude" required="required" autoComplete="off" id="long"></input></div>
                             </div>
                             <a href="#"><div className="btn btn-info btn__signup">Sign Up</div></a>
                             <div className="member__signin d-flex justify-content-center flex-column align-items-center">
@@ -64,8 +72,6 @@ function Signup() {
                 <div className="col-md-1"></div>
             </div>
         </div>
-
     )
 }
-
 export default Signup
