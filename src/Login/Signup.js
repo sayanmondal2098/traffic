@@ -36,8 +36,8 @@ function Signup() {
                         <img id="img" src="https://linkpicture.com/q/31e9Y7Ob5wL_1.png" alt="background" />
 
                         <h1 className="text-center" id="h1__signup">Sign Up</h1>
-                        <form action="/examples/actions/confirmation.php" method="post" className="form_signup_layout d-flex justify-content-center align-items-center flex-column">
-                            <div class="form-group">
+                        <form className="form_signup_layout d-flex justify-content-center align-items-center flex-column">
+                            <div className="form-group">
                                 <div className="row flex-md-row flex-column">
                                     <div className="col"><input type="text" className="form-control form__signup" name="first_name" placeholder="First Name" required="required" autoComplete="off"></input></div>
                                     <div className="col"><input type="text" className="form-control form__signup" name="last_name" placeholder="Last Name" required="required" autoComplete="off"></input></div>
@@ -45,13 +45,13 @@ function Signup() {
                             </div>
                             <div className="NameEmailPhoneCity">
                                 <div className="form-group">
-                                    <input type="email" className="form-control form__signup" name="email" placeholder="Email" required="required" autoComplete="off"></input>
+                                    <input type="email" className="form-control form__signup" name="email" placeholder="Email" required="required" autoComplete="on"></input>
                                 </div>
                                 <div className="form-group">
-                                    <input type="phone" className="form-control form__signup" name="phone" placeholder="Phone" required="required" autoComplete="off"></input>
+                                    <input type="phone" className="form-control form__signup" name="phone" placeholder="Phone" required="required" autoComplete="on"></input>
                                 </div>
                                 <div className="form-group">
-                                    <input type="password" className="form-control form__signup" name="password" placeholder="Password" required="required" autoComplete="off"></input>
+                                    <input type="password" className="form-control form__signup" name="password" placeholder="Password" required="required" ></input>
                                 </div>
                                 <div className="form-group">
                                     <input type="city" className="form-control form__signup" name="city" placeholder="City" required="required" autoComplete="off"></input>

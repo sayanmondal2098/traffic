@@ -30,6 +30,12 @@
     color: white;
     box-shadow: none;
 }
+
+.form__signup:valid .form-control:valid {
+    background-color: transparent;
+    background: transparent;
+}
+
 .btn__signup {
     margin-top: 20px;
     font-size: 21px;
