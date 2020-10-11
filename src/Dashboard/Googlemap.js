@@ -8,7 +8,7 @@ import GoogleMapReact from 'google-map-react';
 //     Polyline
 //   } from "react-google-maps";
 
-  import { GOOGLE_MAP_API_KEY } from "../Keys";
+import { GOOGLE_MAP_API_KEY } from "../Keys";
 
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 

@@ -5,12 +5,15 @@ import Home from "../Home/Home";
 import Signin from "../Login/Signin";
 import Signup from "../Login/Signup";
 import Googlemap from "../Dashboard/Googlemap";
+import Dashboard from "../Dashboard/Dashboard";
+
 export default class Routing extends Component {
     render() {
         return (
             <BrowserRouter>
               <Switch>
                 <Route path="/gmap" component={Googlemap} />
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signin" component={Signin}/>
                 <Route path="/signup" component={Signup}/>
 
