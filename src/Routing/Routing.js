@@ -5,7 +5,7 @@ import Home from "../Home/Home";
 import Signin from "../Login/Signin";
 import Signup from "../Login/Signup";
 import Googlemap from "../Dashboard/Googlemap";
-import Admin from "../Dashboard/DashTheBoard/layouts/Admin";
+import Dashboard from "../Dashboard/Dashboard";
 
 export default class Routing extends Component {
     render() {
@@ -13,7 +13,7 @@ export default class Routing extends Component {
             <BrowserRouter>
               <Switch>
                 <Route path="/gmap" component={Googlemap} />
-                <Route path="/admin/dashboard" component={Admin} />
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signin" component={Signin}/>
                 <Route path="/signup" component={Signup}/>
 
