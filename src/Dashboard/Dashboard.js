@@ -1,30 +1,51 @@
 import React, { Component } from 'react'
-import GoogleMapReact from 'google-map-react';
-// import {
-//     withScriptjs,
-//     withGoogleMap,
-//     GoogleMap,
-//     Marker,
-//     Polyline
-//   } from "react-google-maps";
-
-import { GOOGLE_MAP_API_KEY } from "../Keys";
-
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-import {Map, InfoWindow, Polyline,Marker, GoogleApiWrapper} from 'google-maps-react';
- 
+import { Googlemap } from "./Googlemap";
+import "../css/Dashboard/Dashboard.css";
 export class Dashboard extends Component {
-    
-     
+
+
   render() {
-    
-      return(
-       <div>
-           Hello
-       </div>
+
+    return (
+      <div className="container-small">
+        <div className="">
+          <div id="viewport">
+            {/* <!-- Sidebar --> */}
+            <div id="sidebar">
+              <header>
+                <a href="#">My App</a>
+              </header>
+              <ul class="nav">
+                <li>
+                  <a href="#">
+                    <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+                </a>
+                </li>
+
+
+
+              </ul>
+            </div>
+            {/* <!-- Content --> */}
+            <div id="content">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Test User</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="container-fluid">
+                <div className="googleMap">
+                  <Googlemap />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
- 
+
 export default Dashboard;
