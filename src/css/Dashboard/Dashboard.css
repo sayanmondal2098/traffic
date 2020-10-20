@@ -66,6 +66,7 @@ body {
   color: #CFD8DC;
   font-size: 14px;
   padding: 16px 24px;
+  float: right;
 }
 
 #sidebar .nav a:hover{
@@ -84,8 +85,13 @@ body {
     float: right;
 }
 
+.navbar__right {
+    float: right;
+}
+
 .googleMap {
     padding-top: 52px;
-    height: 100%;
+    min-height: 1024px;
+    max-height: 100%;
     width: 100%;
 }

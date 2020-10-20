@@ -13,11 +13,6 @@ function Home() {
       <Header/>
       {/* Home */}
       <FrontHome/>
-
-
-
-
-
       
     </div>
   );
