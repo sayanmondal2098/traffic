@@ -49,31 +49,31 @@ export class Googlemap extends Component {
   }
 
   componentDidMount(){
-    const list = []
     axios
     .post(
       SERVER_IP+
       `\getAmbulanceTraffic?traffID=${this.state.traffID}`
     )
     .then((res)=>{
-      console.log(res)
+      // console.log(res)
       var ambul = res['data']['activeSOS']
-      console.log("xxxxxxxxxxxxx"+ambul.length)
+      console.log(ambul.length)
       for (let index = 0; index < ambul.length; index++) {
         this.state.trafficAmbul.push(ambul[index])
-        
       }
     }
     )
-    // .then(response => response.json())
+    .then(response => console.log(response))
     // .then(data => {
     //   this.setState({trafficAmbul : data.activeSOS})
     // })
     .then(
-      console.log("0000000000"),
+      // console.log("0000000000"),
       console.log(this.state.trafficAmbul)
+
     )
-    .then(console.log(this.state.trafficAmbul))
+    // .then(console.log(this.state.trafficAmbul))
+    
   }
 
 
@@ -93,27 +93,26 @@ export class Googlemap extends Component {
     }
   };
 
-  render() {
-    const triangleCoords = [
-      { lat: 25.774, lng: -80.190 },
-      { lat: 18.466, lng: -66.118 },
-      { lat: 32.321, lng: -64.757 },
-      { lat: 25.774, lng: -80.190 }
-    ];
-    return (
-      <Map google={this.props.google}
-        onClick={this.onMapClicked}>
-        <Marker onClick={this.onMarkerClick}
-          name={'Current location'} />
 
-        <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}>
-          <div>
-            {/* <h1>{this.state.selectedPlace.name}</h1> */}
-          </div>
-        </InfoWindow>
-      </Map>
+loltest(){
+  this.state.trafficAmbul.map(movie => {
+    return <li key={`movie-${movie.vehicle_regno}`}>{movie.otp}</li>
+  })
+}
+  render() {
+    const { movies } = this.state.trafficAmbul;
+    console.log(this.state.trafficAmbul.toString())
+    return (
+
+     <div>
+       {this.state.traffID}
+       {this.state.trafficLoggedIn}
+    {movies}
+    <ul>
+     
+    </ul>
+
+     </div>
     );
   }
 }
