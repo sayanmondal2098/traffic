@@ -19,7 +19,7 @@
     "react-dom": "16.13.1",
     "react-google-maps": "9.4.5",
     "react-particle-animation": "1.0.1",
-    "react-particles-js": "3.3.0",
+    "react-particles-js": "3.4.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3"
   },
