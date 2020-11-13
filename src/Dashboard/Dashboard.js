@@ -38,7 +38,7 @@ export class Dashboard extends Component {
               </nav>
               <div class="container-fluid">
                 <div className="googleMap">
-                  <Googlemap/>
+                  <Googlemap />
                 </div>
               </div>
             </div>

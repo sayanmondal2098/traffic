@@ -26,54 +26,39 @@ export class Googlemap extends Component {
 
     this.state = {
       trafficLoggedIn,
-      traffID : traffID ,
-      trafficAmbul : []
-      // len : undefined,
-      // vehicle_regno: undefined,
-      // pickupCoord : undefined,
-      // dropClock : undefined,
-      // vehicle_location : undefined,
-      // otp: undefined,
-      // driver_phone: undefined,
-      // pickupClock : undefined,
-      // driver_name : undefined,
-      // sos_status : undefined,
-      // hospital_name: undefined,
-      // hospital_location : undefined,
-      // hospital_phone : undefined,
-      // hospital_address: undefined,
-      // driver_image : undefined,
-      // txnID : undefined,
-      // requestClock : undefined
+      traffID: traffID,
+      trafficAmbul: "",
     };
   }
 
-  componentDidMount(){
-    axios
-    .post(
-      SERVER_IP+
-      `\getAmbulanceTraffic?traffID=${this.state.traffID}`
-    )
-    .then((res)=>{
-      // console.log(res)
-      var ambul = res['data']['activeSOS']
-      console.log(ambul.length)
-      for (let index = 0; index < ambul.length; index++) {
-        this.state.trafficAmbul.push(ambul[index])
-      }
-    }
-    )
-    .then(response => console.log(response))
-    // .then(data => {
-    //   this.setState({trafficAmbul : data.activeSOS})
-    // })
-    .then(
-      // console.log("0000000000"),
-      console.log(this.state.trafficAmbul)
+  componentDidMount() {
+    this.getInfo();
+  }
 
-    )
-    // .then(console.log(this.state.trafficAmbul))
-    
+  getInfo() {
+    var alldata = []
+    axios
+      .post(
+        SERVER_IP +
+        `\getAmbulanceTraffic?traffID=${this.state.traffID}`
+      )
+      .then((res) => {
+        // console.log(res)
+        var ambul = res['data']['activeSOS']
+        console.log(ambul.length)
+        for (let index = 0; index < ambul.length; index++) {
+          console.log(ambul[index]['hospital_name'])
+          alldata.push(ambul[index])
+
+        }
+        this.setState({
+          trafficAmbul : alldata
+        })
+      }
+      )
+      .catch((error) => {
+        console.log(error)
+      })
   }
 
 
@@ -93,26 +78,24 @@ export class Googlemap extends Component {
     }
   };
 
-
-loltest(){
-  this.state.trafficAmbul.map(movie => {
-    return <li key={`movie-${movie.vehicle_regno}`}>{movie.otp}</li>
-  })
-}
   render() {
-    const { movies } = this.state.trafficAmbul;
-    console.log(this.state.trafficAmbul.toString())
+    // console.table( (this.state.trafficAmbul))
+    var result = Object.entries(this.state.trafficAmbul);
+    // console.log((result[0].otp))
+    console.table(result[1])
+    // console.log(result[1][0]["otp"])
     return (
+      <div>
+        <ul>
+          {result.map(item => (
+            <li key={item}>
+              otp: {item[1].otp}
+            </li>
+          ))}
 
-     <div>
-       {this.state.traffID}
-       {this.state.trafficLoggedIn}
-    {movies}
-    <ul>
-     
-    </ul>
+        </ul>
 
-     </div>
+      </div>
     );
   }
 }
